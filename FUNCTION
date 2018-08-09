@@ -1,0 +1,46 @@
+#include <stdio.h>
+int input();
+int compute();
+int output();
+   int a,b,sum;
+int main()
+{   
+    input();
+    compute();
+    output();
+}
+
+int input()
+{
+    printf("ENTER TWO NUMBERS A AND B: ");
+    scanf("%d%d",&a,&b);
+}
+
+int compute()
+{
+    sum=a+b;
+}
+
+int output()
+{
+    printf("THE SUM OF TWO NUMBERS : %d",sum);
+}
+
+
+
+
+OUTPUT:
+ENTER TWO NUMBERS A AND B: 21                                                                                                  
+21                                                                                                                             
+THE SUM OF TWO NUMBERS : 42 
+
+*****************************************************************************************************************************************
+
+2.FUNCTION TO ADD TWO NUMBERS:
+
+int sum(int a,int b)
+{
+    int sum;
+    sum=a+b;
+    return sum;
+}
