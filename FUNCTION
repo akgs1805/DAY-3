@@ -107,5 +107,51 @@ int addNumbers(float a,float b)         // function definition
 
 ****************************************************************************************************************************************
 
+5.
+#include <stdio.h>
+struct compare
+{
+    int a;
+    int b;
+    int max;
+    int min;
+};
+struct compare s;
 
+struct compare input()
+{
+    printf("ENTER TWO NUMBERS");
+    scanf("%d%d",&s.a,&s.b);
+}
+
+struct compare compute()
+{
+    if(s.a>s.b)
+    {
+        s.max=s.a;
+        s.min=s.b;
+    }
+    else if(s.b>s.a)
+    {   
+        s.max=s.b;
+        s.min=s.a;
+    }
+    
+}
+
+struct compare output()
+{
+    if(s.max==s.min)
+     printf("BOTH ARE EQUAL");
+    else
+     printf("MAXIMUM IS %d MINIMUM IS %d",s.max,s.min);
+}
+
+int main()
+{
+    input();
+    compute();
+    output();
+    return 0;
+}
 
