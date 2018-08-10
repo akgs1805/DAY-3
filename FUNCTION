@@ -1,4 +1,5 @@
 
+1.
 #include<stdio.h>
 struct sum{
     int a;
@@ -48,3 +49,63 @@ int sum(int a,int b)
     sum=a+b;
     return sum;
 }
+*****************************************************************************************************************************************
+3.
+
+#include <stdio.h>
+struct sum
+{
+    float a;
+    float b;
+    float sum;
+};
+
+struct sum s;
+
+struct sum input()
+{
+    printf("ENTER TWO NUMBERS\n");
+    scanf("%f%f",&s.a,&s.b);
+    return s;
+}
+
+struct sum compute()
+{
+    s.sum=s.a+s.b;
+    return s;
+}
+
+struct sum output()
+{
+    printf("SUM OF %f AND %f IS : %f",s.a,s.b,s.sum);
+}
+
+int main()
+{
+    input();
+    compute();
+    output();
+    return 0;
+}
+
+
+output:
+ENTER TWO NUMBERS                                                                                                              
+10                                                                                                                             
+20                                                                                                                             
+SUM OF 10.000000 AND 20.000000 IS : 30.000000           
+
+***************************************************************************************************************************************
+4.
+
+int addNumbers(float a,float b)         // function definition   
+{
+    float result;
+    result = a+b;
+    return result;                  // return statement
+}
+
+****************************************************************************************************************************************
+
+
+
